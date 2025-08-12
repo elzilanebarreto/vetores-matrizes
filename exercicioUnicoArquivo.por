@@ -49,10 +49,12 @@ programa
 programa
 {
 	
+	//inclua biblioteca Matematica --> mat
 	funcao inicio()
 	{
 		const inteiro tam = 10
-		inteiro vetor[10], par, indiceImpar, soma = 0, media = 0
+		inteiro vetor[10], par, indiceImpar, soma = 0
+		real media
 
 		para(inteiro i = 0; i < tam; i++)
 		{
@@ -64,7 +66,8 @@ programa
 
 		limpa()
 
-		media = soma / tam
+		//Para poder arredondar para baixo
+		media = soma / 10
 
 		escreva("Elementos nos índices ímpares:\n")
 		para(inteiro i = 0; i < tam; i++)
@@ -86,6 +89,7 @@ programa
 		}
 
 		escreva("\nSoma:\n", soma, "\nMédia:\n", media)
+
 	}
 }
 
@@ -94,7 +98,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1552; 
+ * @POSICAO-CURSOR = 1315; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
